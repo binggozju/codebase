@@ -1,2 +1,2 @@
 # codebase
-This repository contains some mini projects implemented by myself, including TCPServer, ThreadPool and so on.
+This repository contains some mini projects implemented with C/C++ by myself, including TCPServer, ThreadPool and so on.
