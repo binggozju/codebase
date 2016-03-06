@@ -1,13 +1,13 @@
 APP = zkcli
 
-INCLUDES = -I/usr/local/include -I/usr/include
+INCLUDES = -I/usr/local/include -I/usr/include -I/usr/local/include/zookeeper
 LIBS = -L/usr/local/lib -L/usr/lib
 
 CC = gcc
 CXX = g++
 CTAGS = ctags
-CFLAGS = -g -Wall -O0 -c $(INCLUDES) 
-LDFLAGS = -lzookeeper_st $(LIBS)
+CFLAGS = -g -Wall -O0 -c -DTHREADED $(INCLUDES) 
+LDFLAGS = -lzookeeper_mt $(LIBS)
 
 SRCDIR = .
 SRCS = $(wildcard $(SRCDIR)/*.cpp)
